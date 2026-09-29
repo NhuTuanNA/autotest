@@ -1,0 +1,16 @@
+{
+  "name": "automation-learning-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test tests/solutions",
+    "test:headed": "playwright test tests/solutions --headed",
+    "test:ui": "playwright test tests/solutions --ui",
+    "test:debug": "playwright test tests/solutions --debug",
+    "codegen": "playwright codegen https://demo.playwright.dev/todomvc/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.0.0"
+  }
+}
