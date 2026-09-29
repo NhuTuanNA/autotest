@@ -5,8 +5,8 @@
   "scripts": {
     "test": "playwright test tests/solutions",
     "test:headed": "playwright test tests/solutions --headed",
-    "test:ui": "playwright test --ui",
-    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test tests/solutions --ui",
+    "test:debug": "playwright test tests/solutions --debug",
     "codegen": "playwright codegen https://demo.playwright.dev/todomvc/"
   },
   "devDependencies": {
