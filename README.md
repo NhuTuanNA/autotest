@@ -16,7 +16,7 @@ Thay vì học lập trình nhiều tuần rồi mới bắt đầu automation.
 
 Nếu học trên **Windows**, làm theo đúng thứ tự:
 
-1. **[Setup Windows](setup/windows.md)** — cài VS Code, Node.js, Postman, Playwright.
+1. **[Setup Windows](setup/windows.md)** — cài VS Code, Node.js, Postman, Playwright. Nếu lỗi, xem **[Troubleshooting Windows](setup/troubleshooting-windows.md)**.
 2. **[Buổi 00 — Cách học & dùng AI](course/00-learning-method.md)**.
 3. Học lần lượt Buổi 01 -> 14.
 4. Khi bài học yêu cầu thực hành, dùng code có sẵn trong **[exercises/](exercises/)**.
@@ -98,6 +98,7 @@ autotest/
 ├── README.md
 ├── setup/
 │   ├── windows.md
+│   ├── troubleshooting-windows.md
 │   └── check-environment.ps1
 ├── course/
 │   ├── 00-learning-method.md
