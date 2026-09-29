@@ -34,8 +34,8 @@ npm -v
 Ví dụ kết quả:
 
 ```text
-v22.x.x
-10.x.x
+vXX.x.x
+XX.x.x
 ```
 
 Nếu hiện phiên bản là đạt.
@@ -196,7 +196,7 @@ npm install
 Cài browser Playwright:
 
 ```powershell
-npx playwright install
+npx playwright install chromium
 ```
 
 Kiểm tra:
@@ -208,13 +208,13 @@ npm test
 Nếu muốn nhìn browser chạy:
 
 ```powershell
-npx playwright test --headed
+npm run test:headed
 ```
 
 UI mode:
 
 ```powershell
-npx playwright test --ui
+npm run test:ui
 ```
 
 ## 11. Extension VS Code nên cài
@@ -260,3 +260,10 @@ Hãy:
 2. Chỉ cho tôi từng bước kiểm tra.
 3. Không yêu cầu cài lại mọi thứ nếu chưa cần.
 ```
+
+
+---
+
+## 14. Nếu gặp lỗi
+
+Xem **[Troubleshooting Windows](troubleshooting-windows.md)** trước khi cài lại môi trường.
