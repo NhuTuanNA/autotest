@@ -143,7 +143,23 @@ Nếu lệnh `code` chưa chạy được:
 Mở VS Code -> File -> Open Folder -> chọn thư mục autotest
 ```
 
-## 8. Kiểm tra Node bằng bài đơn giản
+## 8. Chạy script kiểm tra môi trường
+
+Từ thư mục repo:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\setup\check-environment.ps1
+```
+
+Script sẽ kiểm tra:
+
+- Node.js
+- npm
+- Git (Git chỉ là optional ở vòng 1)
+
+Nếu Node/npm báo `[OK]` thì tiếp tục.
+
+## 9. Kiểm tra Node bằng bài đơn giản
 
 Tạo file hoặc dùng file:
 
@@ -163,7 +179,7 @@ Expected:
 Environment OK
 ```
 
-## 9. Khởi tạo Playwright
+## 10. Khởi tạo Playwright
 
 Đi tới project:
 
@@ -186,7 +202,7 @@ npx playwright install
 Kiểm tra:
 
 ```powershell
-npx playwright test
+npm test
 ```
 
 Nếu muốn nhìn browser chạy:
@@ -201,7 +217,7 @@ UI mode:
 npx playwright test --ui
 ```
 
-## 10. Extension VS Code nên cài
+## 11. Extension VS Code nên cài
 
 Không bắt buộc, nhưng nên có:
 
@@ -210,7 +226,7 @@ Không bắt buộc, nhưng nên có:
 
 Tìm trong tab Extensions của VS Code.
 
-## 11. Checklist setup
+## 12. Checklist setup
 
 - [ ] VS Code mở được
 - [ ] `node -v` chạy được
@@ -219,9 +235,9 @@ Tìm trong tab Extensions của VS Code.
 - [ ] Repo đã tải về
 - [ ] `node ...hello.js` in ra `Environment OK`
 - [ ] `npm install` trong exercises/playwright chạy thành công
-- [ ] `npx playwright test` chạy được
+- [ ] `npm test` chạy được
 
-## 12. Prompt AI khi setup lỗi
+## 13. Prompt AI khi setup lỗi
 
 ```text
 Tôi đang setup môi trường Automation Testing trên Windows.
